@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+    <style>
+        p{
+            background-color: red;
+        }
+        p:hover{
+            background-color: green;
+        }
+        #someId{
+            color: yellow;
+        }
+        .any{
+            
+        }
+    </style>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+			</ul>
+		</nav>
+
+        <p class="any">is pe hover krna hai</p>
+        <p id="someId">another p</p>
+		
+        <div style="margin-left: 200px;">
+			<span class="relative flex h-3 w-3">
+				<span
+					class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+				<span
+					class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+			</span>
+		</div>
+	</body>
+</html>
