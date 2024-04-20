@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="module" src="./arrowFunc.js"></script>
+        <!-- <script type="module" src="./arrowFunc.js"></script> -->
+        <script type="module" src="./numberGuess.js"></script>
 		<title>Document</title>
 	</head>
 	<body>
@@ -14,5 +15,19 @@
                 </li>
             </ul>
         </nav>
+        <!-- number form -->
+        <form id="numberForm">
+            <input 
+                type="number" 
+                name="number" 
+                id="number" 
+                placeholder="Enter Number"
+            >
+            <button type="submit" id="button">Enter</button>
+        </form>
+        <!-- game resulet -->
+        <div id="displayResult">
+
+        </div>
     </body>
 </html>
