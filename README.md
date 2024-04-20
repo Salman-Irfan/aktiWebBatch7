@@ -2,3 +2,5 @@
 we did html css and bootstrap basics
 
 js comarison and logical statements
+
+normal function, arrow functions
