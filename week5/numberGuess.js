@@ -67,6 +67,9 @@ const displayTwo = () => {
 
 const admissionStatus = (userMarks) => {
     if(userMarks >= 950){
+        if(userMarks >=951 && userMarks <= 1000){
+            return `electrical`
+        }
         return true
     }else {
         return false
@@ -76,6 +79,8 @@ const admissionStatus = (userMarks) => {
 
 let harronStatus = admissionStatus(850)
 console.log(harronStatus)
+
+let abubakarStatus = admissionStatus(990)
 
 
 if(harronStatus === true){
