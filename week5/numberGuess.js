@@ -14,24 +14,72 @@ const displayResult = document.getElementById("displayResult")
 //     console.log(`button clicked`)
 // } )
 
-let winningNumber = 70
+let anyNumber =  Math.random()*100
+console.log(anyNumber)
+console.log(Math.floor(anyNumber))
+
+let winningNumber = Math.floor(anyNumber)
+
+let count = 1
+
+
 
 numberForm.addEventListener("submit", (event)=>{
+
     event.preventDefault()
     let parsedNumber = parseInt(number.value)
     
     if(parsedNumber === winningNumber){
         displayResult.innerHTML = `
-            <h1>You Won</h1>
+            <h1>You Won ${count} </h1>
         `
     }
     else if (parsedNumber < winningNumber){
         displayResult.innerHTML = `
             <h1>smaller</h1>
+            <p>Tries: ${count}</p>
         `
+        count++
     }else if (parsedNumber > winningNumber){
         displayResult.innerHTML = `
             <h1>greater</h1>
+            <p>Tries: ${count}</p>
         `
+        count++
     }
 })
+
+
+displayText() // khatry ki ghanti
+
+function displayText (){
+    console.log(`display text`)
+}
+
+
+
+// displayTwo() // error
+const displayTwo = () => {
+    console.log(`arrow display`)
+}
+
+
+
+const admissionStatus = (userMarks) => {
+    if(userMarks >= 950){
+        return true
+    }else {
+        return false
+    }
+}
+
+
+let harronStatus = admissionStatus(850)
+console.log(harronStatus)
+
+
+if(harronStatus === true){
+    console.log(`harron is eleigible to apply`)
+}else{
+    console.log(`harron is not eleigible to apply`)
+}
