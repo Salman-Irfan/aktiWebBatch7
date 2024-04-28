@@ -21,5 +21,4 @@ ytVideo.innerHTML = `
     <p>${video1.channelName}</p>
     <p>${video1.numberOfViews}</p>
     <p>${video1.uploadTime}</p>
-
 `
