@@ -20,6 +20,8 @@ console.log(arrOfCourses)
 // remove from custom range
 arrOfCourses.splice(0, 1, "dld", "asd" )
 console.log(arrOfCourses)
+const selectedCourses = arrOfCourses.slice(2,6)
+console.log(selectedCourses)
 
 // how to get the deleted item
 let mjyKyuNikala = arrOfCourses.pop()

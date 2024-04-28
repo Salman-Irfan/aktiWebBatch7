@@ -8,3 +8,5 @@ normal function, arrow functions
 compelete number game
 
 array, loops, methods, primitiv and reference data types
+
+object key value pairs
